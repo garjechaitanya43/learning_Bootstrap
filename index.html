@@ -5,47 +5,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <style>
+      .nav-link item{
+        background-color: red;
+      }
+    </style>
 </head>
 <body>
     <!-- Header Start -->
    <header>
-     <nav class="navbar navbar-expand-lg bg-body-tertiary">
+             <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">
+      <img src="images/con2.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">Mobile Shoppee</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active bg-danger" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="about.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="products.html">Products</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
+            Gallyery
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="photo.html">Photo</a></li>
+            <li><a class="dropdown-item" href="video.html">Video</a></li>
+            
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+         <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact us</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+
     </div>
   </div>
 </nav>
    </header>
+   <!-- Header end -->
+    <main>
+      <!-- slider start -->
+       <section >
+          <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaption" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaption" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+    <button type="button" data-bs-target="#carouselExampleCaption" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+    <button type="button" data-bs-target="#carouselExampleCaption" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="images/butterfly1.jpg" class="d-block w-100" alt="...">
+    <div class="carousel-item">
+      <h1>First slide label</h1>
+      <p>Some representative placeholser for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="images/banner.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption">
+        <h1>Second slide label</h1>
+      <p>Some representative placeholser content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="images/modern1.jpg" class="d-block w-100" alt="...">
+       <div class="carousel-caption">
+        <h1>Third slide label</h1>
+      <p>Some representative placeholser content for the third slide.</p>
+      </div>
+    </div>
+      <img src="images/modern2.jpg" class="d-block w-100" alt="...">
+       <div class="carousel-caption">
+        <h1>Fouth slide label</h1>
+      <p>Some representative placeholser content for the fouth slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+       </section>
+       <!-- slider end -->
+
+<!-- services section start -->
+        <section class="mt-5">
+          <div class="container">
+            <div class="row">
+              <h2 class="mb-3 text-white">Our Services</h2>
+              <div class="col-md-3">
+                <div class="card">
+                  <img src="images/con1.jpg"
+                  class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">contruction</h5>
+                    <p class="card-text">Independent contractor, a natural person, business or corporation which provides goods or services to another entity under terms specified in a contract</p>
+
+                  </div>
+
+                </div>
+                 
+              </div>
+              <Div class="col-md-3">
+                <div class="card">
+                  <img src="images/butterfly1.jpg"
+                    class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Butterfly</h5>
+                        <p class="card-text">Independent contractor, a natural person, business or corporation which provides goods or services to another entity under terms specified in a contract</p>
+                      </Div>
+                  </div>
+                 </div>
+
+          <div class="col-md-3">
+                <div class="card">
+                  <img src="images/con1.jpg"
+                    class="card-img-top" alt="...">
+                      <div class="card-body">
+                       <h5 class="card-title">contruction</h5>
+                        <p class="card-text">Independent contractor, a natural person, business or corporation which provides goods or services to another entity under terms specified in a contract</p>
+                        </div>
+                      </div>
+                    </div>
+
+            <Div class="col-md-3">
+               <div class="card">
+                  <img src="images/butterfly1.jpg"
+                  class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Butterfly</h5>
+                    <p class="card-text">Independent contractor, a natural person, business or corporation which provides goods or services to another entity under terms specified in a contract</p>
+                  </Div>
+                </div>
+             </div>
+
+        </section>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
